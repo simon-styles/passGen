@@ -1,4 +1,4 @@
-## PassGen - Generating passwords and estimating their strength (ongoing)
+## PassGen - Generating passwords and estimating their strength
 
 **Note:** PassGen is under active development. Upon completion, it will offer password generation and strength estimation, evaluating both entropy and the potential time required for a sophisticated botnet to conduct a brute-force attack.
 
