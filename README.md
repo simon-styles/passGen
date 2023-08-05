@@ -1,17 +1,24 @@
-# passGen
+## PassGen - Generating passwords and estimating their strength (ongoing)
 
-# Getting Started with Create React App
+**Note:** PassGen is under active development. Upon completion, it will offer password generation and strength estimation, evaluating both entropy and the potential time required for a sophisticated botnet to conduct a brute-force attack.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Installation
 
-## Available Scripts
+Clone the Git repository and navigate to the project directory:
+```bash
+git clone https://github.com/simonstarkgit/passGen.git
+cd passGen
+```
 
-In the project directory, you can run:
+Next, install the necessary dependencies listed in package.json by running:
+```bash
+npm install
+```
 
-### `npm start`
+### Running on Localhost
+To run the app in the development mode, execute:
+```bash
+npm start
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Open http://localhost:3000 to view it in the browser. The page will reload if you make edits, and you will also see any lint errors in the console.
