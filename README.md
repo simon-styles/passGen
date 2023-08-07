@@ -5,18 +5,22 @@
 ### Installation
 
 Clone the Git repository and navigate to the project directory:
+
 ```bash
 git clone https://github.com/simonstarkgit/passGen.git
 cd passGen
 ```
 
 Next, install the necessary dependencies listed in package.json by running:
+
 ```bash
 npm install
 ```
 
 ### Running on Localhost
+
 To run the app in the development mode, execute:
+
 ```bash
 npm start
 ```
