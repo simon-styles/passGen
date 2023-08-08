@@ -3,7 +3,24 @@ import { AppBar, Toolbar, Typography } from "@mui/material";
 
 import AppBarBottom from "./AppBarBottom";
 import { ThemeContext } from "./ThemeContext";
+import { generatePassword } from "../services/passwordService";
 
+/**
+ * -----------------------------------------------
+ */
+const length = 8;
+const categories = [
+  "abcdefghijklmnopqrstuvwxyz",
+  "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+  "0123456789",
+];
+const password = generatePassword(length, categories);
+console.log("---");
+console.log(password);
+console.log("---");
+/**
+ * -----------------------------------------------
+ */
 
 const MainPage: React.FC = () => {
   const { darkMode } = useContext(ThemeContext);
