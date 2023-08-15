@@ -4,6 +4,7 @@ import { AppBar, Toolbar, Typography } from "@mui/material";
 import AppBarBottom from "./AppBarBottom";
 import { ThemeContext } from "./ThemeContext";
 import { generatePassword } from "../services/passwordService";
+import { computeEntropy } from "../services/entropyService";
 
 /**
  * -----------------------------------------------
@@ -15,9 +16,9 @@ const categories = [
   "0123456789",
 ];
 const password = generatePassword(length, categories);
-console.log("---");
-console.log(password);
-console.log("---");
+const entropy = computeEntropy(password);
+console.log(`Password is: ${password}`);
+console.log(`Entropy of the password is: ${entropy}`);
 /**
  * -----------------------------------------------
  */
