@@ -5,6 +5,7 @@ import AppBarBottom from "./AppBarBottom";
 import { ThemeContext } from "./ThemeContext";
 import { generatePassword } from "../services/passwordService";
 import { computeEntropy } from "../services/entropyService";
+import { computeBruteForceTime } from "../services/bruteForceTimeService";
 
 /**
  * -----------------------------------------------
@@ -17,8 +18,12 @@ const categories = [
 ];
 const password = generatePassword(length, categories);
 const entropy = computeEntropy(password);
+const bruteForceTime = computeBruteForceTime(entropy);
 console.log(`Password is: ${password}`);
 console.log(`Entropy of the password is: ${entropy}`);
+console.log(
+  `Brute force time is: ${bruteForceTime.time} ${bruteForceTime.unit}`,
+);
 /**
  * -----------------------------------------------
  */
