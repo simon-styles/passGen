@@ -21,7 +21,7 @@ const AppBarTop: React.FC = () => {
             color: darkMode ? "#999da2" : "#70757a",
           }}
         >
-          PassGen - Generating passwords and estimating their strength
+          PassGen - Generating passwords and estimating their strength (browser version)
         </Typography>
       </Toolbar>
     </AppBar>
