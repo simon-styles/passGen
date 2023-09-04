@@ -3,9 +3,11 @@ import React from "react";
 import AppBarTop from "./AppBarTop";
 import AppBanner from "./AppBanner";
 import AppBarBottom from "./AppBarBottom";
+import AppTextField from "./AppTextField";
 import { generatePassword } from "../services/passwordService";
 import { computeEntropy } from "../services/entropyService";
 import { computeBruteForceTime } from "../services/bruteForceTimeService";
+import {Divider} from "@mui/material";
 
 /**
  * -----------------------------------------------
@@ -33,6 +35,8 @@ const MainPage: React.FC = () => {
     <div>
       <AppBarTop />
       <AppBanner />
+      <Divider />
+      <AppTextField />
       <AppBarBottom />
     </div>
   );
