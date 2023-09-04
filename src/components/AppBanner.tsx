@@ -17,7 +17,7 @@ const AppBanner: React.FC = () => {
         backgroundColor: darkMode ? "#303134" : "#e0e0e0",
       }}
     >
-      <Typography style={{ fontSize: "68px" }}>PassGen</Typography>
+      <Typography style={{ fontSize: "68px", color: darkMode ? "#999da2" : "#70757a" }}>PassGen</Typography>
     </Box>
   );
 };
