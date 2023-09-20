@@ -108,6 +108,7 @@ const GeneratePassword: React.FC = () => {
               value={length}
               onChange={handleSetLength}
               label={"Length"}
+              size={"small"}
               MenuProps={{
                 PaperProps: {
                   style: {
@@ -138,6 +139,7 @@ const GeneratePassword: React.FC = () => {
                   <Checkbox
                     checked={selectedCategories.useNumbers}
                     onChange={handleCheckboxChange("useNumbers")}
+                    size={"small"}
                   />
                 }
                 label={"Numbers"}
@@ -149,6 +151,7 @@ const GeneratePassword: React.FC = () => {
                   <Checkbox
                     checked={selectedCategories.useLowerCase}
                     onChange={handleCheckboxChange("useLowerCase")}
+                    size={"small"}
                   />
                 }
                 label={"Lowercase"}
@@ -160,6 +163,7 @@ const GeneratePassword: React.FC = () => {
                   <Checkbox
                     checked={selectedCategories.useUpperCase}
                     onChange={handleCheckboxChange("useUpperCase")}
+                    size={"small"}
                   />
                 }
                 label={"Uppercase"}
@@ -171,6 +175,7 @@ const GeneratePassword: React.FC = () => {
                   <Checkbox
                     checked={selectedCategories.useSymbols}
                     onChange={handleCheckboxChange("useSymbols")}
+                    size={"small"}
                   />
                 }
                 label={"Symbols"}
