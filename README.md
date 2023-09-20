@@ -1,6 +1,6 @@
 ## PassGen - generating passwords and estimating their strength (browser version)
 
-**Note:** PassGen offers password generation and strength estimation, evaluating both entropy and the potential time required for a sophisticated botnet to conduct a brute-force attack.
+PassGen offers password generation and strength estimation, evaluating both entropy and the potential time required for a sophisticated botnet to conduct a brute-force attack.
 
 ### Installation
 
