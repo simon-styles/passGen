@@ -1,14 +1,14 @@
-## PassGen - Generating passwords and estimating their strength (browser version)
+## PassGen - generating passwords and estimating their strength (browser version)
 
-**Note:** PassGen is under active development. Upon completion, it will offer password generation and strength estimation, evaluating both entropy and the potential time required for a sophisticated botnet to conduct a brute-force attack.
+**Note:** PassGen offers password generation and strength estimation, evaluating both entropy and the potential time required for a sophisticated botnet to conduct a brute-force attack.
 
 ### Installation
 
 Clone the Git repository and navigate to the project directory:
 
 ```bash
-git clone https://github.com/simonstarkgit/passGen.git
-cd passGen
+git clone https://github.com/simon-styles/passGen.git
+cd passGen-main
 ```
 
 Next, install the necessary dependencies listed in package.json by running:
