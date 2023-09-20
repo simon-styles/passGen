@@ -17,7 +17,7 @@ Next, install the necessary dependencies listed in package.json by running:
 npm install
 ```
 
-### Running on Localhost
+### Running on localhost
 
 To run the app in the development mode, execute:
 
