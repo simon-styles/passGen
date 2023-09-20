@@ -1,7 +1,7 @@
 const LOWERCASE_CHARS = 26;
 const UPPERCASE_CHARS = 26;
 const DIGIT_CHARS = 10;
-const SPECIAL_CHARS = 31;
+const SPECIAL_CHARS = 32;
 
 export function computeEntropy(password: string): number {
   if (!password) {
@@ -15,5 +15,5 @@ export function computeEntropy(password: string): number {
   if (/\d/.test(password)) N += DIGIT_CHARS;
   if (/[\W_]/.test(password)) N += SPECIAL_CHARS;
 
-  return parseFloat(Math.log2(Math.pow(N, password.length)).toFixed(2));
+  return Math.log2(Math.pow(N, password.length));
 }

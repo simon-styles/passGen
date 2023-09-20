@@ -19,7 +19,7 @@ export function computeBruteForceTime(entropy: number): {
     { unit: "nanoseconds", factor: 1000 },
   ];
 
-  let unit = "years";
+  let unit = "";
 
   for (let conversion of conversions) {
     if (time >= 1.0) {
@@ -27,6 +27,10 @@ export function computeBruteForceTime(entropy: number): {
       break;
     }
     time *= conversion.factor;
+  }
+
+  if (!unit) {
+    unit = " nanoseconds";
   }
 
   return { time: parseFloat(time.toFixed(2)), unit };

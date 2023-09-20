@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { ThemeContext } from "./ThemeContext";
 import { AppBar, Toolbar, Typography } from "@mui/material";
 
-const AppBarTop: React.FC = () => {
+const BarTop: React.FC = () => {
   const { darkMode } = useContext(ThemeContext);
 
   return (
@@ -10,7 +10,7 @@ const AppBarTop: React.FC = () => {
       <Toolbar
         style={{
           minHeight: "50px",
-          backgroundColor: darkMode ? "#202124" : "#fff",
+          backgroundColor: darkMode ? "#171717" : "#f2f2f2",
         }}
       >
         <Typography
@@ -21,11 +21,12 @@ const AppBarTop: React.FC = () => {
             color: darkMode ? "#999da2" : "#70757a",
           }}
         >
-          PassGen - Generating passwords and estimating their strength (browser version)
+          PassGen - generating passwords and estimating their strength (browser
+          version)
         </Typography>
       </Toolbar>
     </AppBar>
   );
 };
 
-export default AppBarTop;
+export default BarTop;

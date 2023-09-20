@@ -1,3 +1,34 @@
+import { SelectedCategories } from "../interfaces";
+
+function getCategories(selectedCategories: SelectedCategories) {
+  const charSets = {
+    useNumbers: "0123456789",
+    useLowerCase: "abcdefghijklmnopqrstuvwxyz",
+    useUpperCase: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+    useSymbols: "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~",
+  };
+
+  let categories: string[] = [];
+
+  if (selectedCategories.useNumbers) {
+    categories.push(charSets.useNumbers);
+  }
+
+  if (selectedCategories.useLowerCase) {
+    categories.push(charSets.useLowerCase);
+  }
+
+  if (selectedCategories.useUpperCase) {
+    categories.push(charSets.useUpperCase);
+  }
+
+  if (selectedCategories.useSymbols) {
+    categories.push(charSets.useSymbols);
+  }
+
+  return categories;
+}
+
 function getRandomCharacter(str: string): string {
   const randomIndex = Math.floor(Math.random() * str.length);
   return str[randomIndex];
@@ -15,7 +46,12 @@ function shuffle(array: string[]): string[] {
   return array;
 }
 
-export function generatePassword(length: number, categories: string[]): string {
+export function generatePassword(
+  length: number,
+  selectedCategories: SelectedCategories,
+): string {
+  const categories = getCategories(selectedCategories);
+
   if (length < categories.length) {
     throw new Error(`Length must be at least ${categories.length}`);
   }
