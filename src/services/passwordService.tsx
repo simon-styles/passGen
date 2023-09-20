@@ -5,7 +5,7 @@ function getCategories(selectedCategories: SelectedCategories) {
     useNumbers: "0123456789",
     useLowerCase: "abcdefghijklmnopqrstuvwxyz",
     useUpperCase: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
-    useSymbols: "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~",
+    useSymbols: "!#$%&'()*+,-./:;<=>?@[]^_`{|}~",
   };
 
   let categories: string[] = [];

@@ -69,7 +69,6 @@ const GeneratePassword: React.FC = () => {
     const entropy = computeEntropy(password);
     const bruteForceTime = computeBruteForceTime(entropy);
     setGeneratedData({ password, entropy, bruteForceTime });
-    console.log(password, entropy, bruteForceTime);
   }
 
   return (
